@@ -65,7 +65,7 @@ O escopo inicial restringe-se a circuitos de **corrente contínua**.
 
 ```mermaid
 flowchart LR
-    PROBE[Pontas de prova<br/>VCC · GND · Vx] --> ADC[ADC ADS1115]
+    PROBE[Pontas de prova<br/>VCC · GND · Vx] --> ADC[ADC]
     ADC --> ESP1[ESP32 · aquisição]
     ESP1 -->|MQTT| TVA[TV Box · Android<br/>broker MQTT]
     ESP2[ESP32 · iluminação] <-->|MQTT| TVA
